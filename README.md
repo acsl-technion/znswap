@@ -6,7 +6,12 @@ This source-code is POC and given as-is. Code structure can be improved, otherwi
 
 ## Install:
 
-Regular kernel compilation. Make sure that `CONFIG_ZONE_DEVICE`, `CONFIG_BLK_DEV_ZONED`, `CONFIG_BLK_CGROUP`, and `CONFIG_BLK_DEV_THROTTLING` are enabled.
+```bash
+make ARCH=x86 znswap_defconfig
+make
+sudo make modules_install
+sudo make install
+```
 
 ## Setup environment:
 
